@@ -13,7 +13,11 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Logo</a>
-    <div class="nav-wrapper container right-align"><i class="material-icons">shopping_cart</i><a id="logo-container" href="/" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Manejar items</a></li>
+        <li><a href="#">Reportes</a></li>
+        <li><a href="#">Configuracion de cuenta</a></li>
+      </ul>
 <!--
       <ul class="right hide-on-med-and-down">
         <li><a href="http://materializecss.com/templates/starter-template/preview.html#">Navbar Link</a></li>
@@ -28,9 +32,9 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Impresiones X</h1>
+      <h1 class="header center orange-text">Tu cola de impresión</h1>
       <div class="row center">
-        <h5 class="header col s12 light">Los mejores diseños a tu alcance</h5>
+        <h5 class="header col s12 light">Maneja tus pedidos e imprime directamente desde esta página</h5>
       </div>
       <br><br>
 
@@ -43,95 +47,63 @@
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
-          <div class="card medium">
-            <div class="card-image">
-              <img class="materialboxed" src="img/image.jpg">
-              <span class="card-title">Calabaza - L.120</span>
-            </div>
-            <div class="card-content">
-              <p>Perfecta decoración para Halloween.</p>
-            </div>
-            <div class="card-action">
-              <a href="#" class=""><i class="material-icons">shopping_cart</i>Añadir al carrito</a>
-            </div>
-          </div>
-        </div>
+      <table>
+        <thead>
+          <tr>
+              <th data-field="image">Imagen</th>
+              <th data-field="id">Item</th>
+              <th data-field="order">Orden</th>
+              <th data-field="time">Tiempo de impresión</th>
+              <th data-field="fillament">Tipo de filamento</th>
+              <th data-field="fillament">Precio</th>
+              <th data-field="fillament">Estado</th>
+              <th data-field="print">Imprimir</th>
+          </tr>
+        </thead>
 
-        <div class="col s12 m4">
-          <div class="card medium">
-            <div class="card-image">
-              <img class="materialboxed" src="img/image2.jpg">
-              <span class="card-title">Lapicero - L.210</span>
-            </div>
-            <div class="card-content">
-	            <p>Renueva tu escritorio con este novedoso diseño.</p>
-            </div>
-            <div class="card-action">
-              <a href="#" class=""><i class="material-icons">shopping_cart</i>Añadir al carrito</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card medium">
-            <div class="card-image">
-              <img class="materialboxed" src="img/image3.jpg">
-              <span class="card-title">Separador - L.240</span>
-            </div>
-            <div class="card-content">
-              <p>Ideal para organizar tus herramientas.</p>
-            </div>
-            <div class="card-action">
-              <a href="#" class=""><i class="material-icons">shopping_cart</i>Añadir al carrito</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card medium">
-            <div class="card-image">
-              <img class="materialboxed" src="img/image4.jpg">
-              <span class="card-title">Indicadores para baño - L.30</span>
-            </div>
-            <div class="card-content">
-              <p>Divertida manera de indicar donde está el baño.</p>
-            </div>
-            <div class="card-action">
-              <a href="#" class=""><i class="material-icons">shopping_cart</i>Añadir al carrito</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card medium">
-            <div class="card-image">
-              <img class="materialboxed" src="img/image5.jpg">
-              <span class="card-title">Elefante - L.420</span>
-            </div>
-            <div class="card-content">
-              <p>Este bonito juguete es la decoración perfecta para tu escritorio.</p>
-            </div>
-            <div class="card-action">
-              <a href="#" class=""><i class="material-icons">shopping_cart</i>Añadir al carrito</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="card medium">
-            <div class="card-image">
-              <img class="materialboxed" src="img/image6.jpg">
-              <span class="card-title">Dragón - L.120</span>
-            </div>
-            <div class="card-content">
-              <p>Excelente regalo para esta navidad.</p>
-            </div>
-            <div class="card-action">
-              <a href="#" class=""><i class="material-icons">shopping_cart</i>Añadir al carrito</a>
-            </div>
-          </div>
-        </div>
+        <tbody>
+          <tr>
+            <td><img class="materialboxed" width="100" src="img/0image1.jpg"></td>
+            <td>Case</td>
+            <td><a href="#">#5345</a> - por Julian C.</td>
+            <td>2h 10mins</td>
+            <td>PLA - Azul</td>
+            <td>L.120.00</td>
+            <td>Pendiente</td>
+            <td><a href="#"><i class="material-icons">print</i></a></td>
+          </tr>
+          <tr>
+            <td><img class="materialboxed" width="100" src="img/0image2.jpg"></td>
+            <td>Juego para maules</td>
+            <td><a href="#">#5732</a> - por Julian C.</td>
+            <td>1h 15mins</td>
+            <td>PLA - Verde</td>
+            <td>L.80.00</td>
+            <td>Imprimiendo</td>
+            <td><a href="#"><i class="material-icons">print</i></a></td>
+          </tr>
+          <tr>
+            <td><img class="materialboxed" width="100" src="img/0image3.jpg"></td>
+            <td>Silbato</td>
+            <td><a href="#">#5267</a> - por Julian C.</td>
+            <td>20mins</td>
+            <td>HIPS - Amarillo</td>
+            <td>L.50.00</td>
+            <td>Por entregar</td>
+            <td><a href="#"><i class="material-icons">print</i></a></td>
+          </tr>
+          <tr>
+            <td><img class="materialboxed" width="100" src="img/0image4.jpg"></td>
+            <td>Barquito</td>
+            <td><a href="#">#5365</a> - por Julian C.</td>
+            <td>2h 44mins</td>
+            <td>PLA - Azul</td>
+            <td>L.320.00</td>
+            <td>Entregada</td>
+            <td><a href="#"><i class="material-icons">print</i></a></td>
+          </tr>
+        </tbody>
+      </table>
       </div>
 
 
